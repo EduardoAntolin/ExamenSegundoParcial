@@ -1,0 +1,35 @@
+﻿<Window x:Class="ExamenSegundoParcial.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamenSegundoParcial"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock x:Name="lblPersonal">1. Información Personal</TextBlock>
+            <TextBlock> ></TextBlock>
+            <TextBlock x:Name="lblContacto">2. Contacto</TextBlock>
+            <TextBlock> ></TextBlock>
+            <TextBlock x:Name="lblPago">3. Información de pago</TextBlock>
+            <TextBlock></TextBlock>
+        </StackPanel>
+
+        <local:ControlInformacionPersonal Visibility="Visible" x:Name="controlInformacionPersonal" Margin="130,0,130,0" >
+        </local:ControlInformacionPersonal>
+
+        <local:ControlContacto Visibility="Collapsed" x:Name="controlContacto">
+
+        </local:ControlContacto>
+
+        <local:ControlInformacionPago Visibility="Collapsed" x:Name="controlInformacionPago">
+
+        </local:ControlInformacionPago>
+
+        <StackPanel>
+            <Button Content="Siguiente" Click="ButtonNext_Click" x:Name="btnSiguiente" Margin="595,0,0,0"/>
+            <TextBlock x:Name="lblAlerta" Margin="595,0,0,0"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

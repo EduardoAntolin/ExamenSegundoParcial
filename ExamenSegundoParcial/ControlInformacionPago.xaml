@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="ExamenSegundoParcial.ControlInformacionPago"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ExamenSegundoParcial"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel>
+
+        <StackPanel>
+            <TextBlock>Número de tarjeta:</TextBlock>
+            <TextBlock HorizontalAlignment="Right" Name="lblAnuncioTarjeta"></TextBlock>
+        </StackPanel>
+        <TextBox x:Name="txtNumeroTarjeta"></TextBox>
+        
+        <TextBlock>CVV: </TextBlock>
+        <TextBox x:Name="txtCVV"></TextBox>
+        
+        <TextBlock>Mes de expiración de la tarjeta :</TextBlock>
+        <TextBox x:Name="txtMesExpiracion"></TextBox>
+
+        <TextBlock>Año de expiración de la tarjeta :</TextBlock>
+        <TextBox x:Name="txtanoExpiracion"></TextBox>
+        
+    </StackPanel>
+</UserControl>
